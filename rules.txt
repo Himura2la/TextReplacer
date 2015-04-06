@@ -1,0 +1,9 @@
+#--------- Settings ----------
+#I am Comment
+->
+#---------- Rules ------------
+<ul>-><table style="border-collapse: collapse;">\n\t<tr>\n\t\t<th style="padding:5px;text-align:left;border-bottom:1px solid #D2D2D2;border-right:1px solid #D2D2D2;">Button</th>\n\t\t<th style="padding:5px;text-align:left;border-bottom:1px solid #D2D2D2;">Field</th>\n\t</tr>
+</ul>-></table>
+<li>->\t<tr>\n\t\t<td style="padding:5px;border-right:1px solid #D2D2D2;">
+</li>-></td>\n\t</tr>
+ button - -></td>\n\t\t<td style="padding:5px;">

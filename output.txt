@@ -1,0 +1,26 @@
+<table style="border-collapse: collapse;">
+	<tr>
+		<th style="padding:5px;text-align:left;border-bottom:1px solid #D2D2D2;border-right:1px solid #D2D2D2;">Button</th>
+		<th style="padding:5px;text-align:left;border-bottom:1px solid #D2D2D2;">Field</th>
+	</tr>
+	<tr>
+		<td style="padding:5px;border-right:1px solid #D2D2D2;"><strong>Delete</strong></td>
+		<td style="padding:5px;"><a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#deleteRow">deleteRow</a></td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border-right:1px solid #D2D2D2;"><strong>Undelete</strong></td>
+		<td style="padding:5px;"><a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#undeleteRow">saveRowChanges</a></td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border-right:1px solid #D2D2D2;"><strong>Add</strong></td>
+		<td style="padding:5px;"><a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#addRow">addRow</a> <sup><em>h</em></sup></td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border-right:1px solid #D2D2D2;"><strong>Save</strong></td>
+		<td style="padding:5px;"><a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#saveAllChanges">saveAllChanges</a> <sup><em>h</em></sup></td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border-right:1px solid #D2D2D2;"><strong>Revert</strong></td>
+		<td style="padding:5px;"><a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#cancelAllChanges">cancelAllChanges</a> <sup><em>h</em></sup></td>
+	</tr>
+</table>
