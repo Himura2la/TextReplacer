@@ -1,7 +1,6 @@
-<ul>
-<li><strong>Delete</strong> button - <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#deleteRow">deleteRow</a></li>
-<li><strong>Undelete</strong> button - <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#undeleteRow">saveRowChanges</a></li>
-<li><strong>Add</strong> button - <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#addRow">addRow</a> <sup><em>h</em></sup></li>
-<li><strong>Save</strong> button - <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#saveAllChanges">saveAllChanges</a> <sup><em>h</em></sup></li>
-<li><strong>Revert</strong> button - <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/texts#cancelAllChanges">cancelAllChanges</a> <sup><em>h</em></sup></li>
-</ul>
+Single-key Templates
+Flow Control
+Conditionals
+Exceptions Handling
+Member Declarations?
+Type Declarations?
