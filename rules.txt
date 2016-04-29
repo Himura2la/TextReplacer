@@ -5,6 +5,13 @@
 #---------- Rules ------------
 
 # Sectioner
-->pre-><group>
-\n->\n<groupbody>\n\n</group>\n\n<group>
-->post->\n<groupbody>\n\n</group>
+#->pre-><group>
+#\n->\n<groupbody>\n\n</group>\n\n<group>
+#->post->\n<groupbody>\n\n</group>
+
+
+# Table Maker 2
+->pre-><list type="table">\n<listheader>\n<item>\n\t<term>Template</term>\n\t<term>Expansion</term>\n</item>\n</listheader>\n<item>\n\t<term>
+\n-></term>\n</item>\n<item>\n\t<term>
+|-></term>\n\t<term>
+->post-></term>\n</item>\n</list>

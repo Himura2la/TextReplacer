@@ -1,6 +1,8 @@
-Single-key Templates
-Flow Control
-Conditionals
-Exceptions Handling
-Member Declarations?
-Type Declarations?
+<b>m</b>|Method
+<b>mb</b>|Boolean Method
+<b>mo</b>|Object Method
+<b>p</b>|Property
+<b>pi</b>|Integer Property
+<b>pd</b>|Double Property
+<b>f</b>|Field
+<b>fs</b>|String Field

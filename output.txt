@@ -1,29 +1,40 @@
-<group>Single-key Templates
-<groupbody>
-
-</group>
-
-<group>Flow Control
-<groupbody>
-
-</group>
-
-<group>Conditionals
-<groupbody>
-
-</group>
-
-<group>Exceptions Handling
-<groupbody>
-
-</group>
-
-<group>Member Declarations?
-<groupbody>
-
-</group>
-
-<group>Type Declarations?
-<groupbody>
-
-</group>
+<list type="table">
+<listheader>
+<item>
+	<term>Template</term>
+	<term>Expansion</term>
+</item>
+</listheader>
+<item>
+	<term><b>m</b></term>
+	<term>Method</term>
+</item>
+<item>
+	<term><b>mb</b></term>
+	<term>Boolean Method</term>
+</item>
+<item>
+	<term><b>mo</b></term>
+	<term>Object Method</term>
+</item>
+<item>
+	<term><b>p</b></term>
+	<term>Property</term>
+</item>
+<item>
+	<term><b>pi</b></term>
+	<term>Integer Property</term>
+</item>
+<item>
+	<term><b>pd</b></term>
+	<term>Double Property</term>
+</item>
+<item>
+	<term><b>f</b></term>
+	<term>Field</term>
+</item>
+<item>
+	<term><b>fs</b></term>
+	<term>String Field</term>
+</item>
+</list>
