@@ -1,8 +1,123 @@
-<b>m</b>|Method
-<b>mb</b>|Boolean Method
-<b>mo</b>|Object Method
-<b>p</b>|Property
-<b>pi</b>|Integer Property
-<b>pd</b>|Double Property
-<b>f</b>|Field
-<b>fs</b>|String Field
+[XAML](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language) -- это язык разметки, основанный на [XML](https://en.wikipedia.org/wiki/XML) и разработанный компанией Microsoft. Он применяется в [WPF](https://en.wikipedia.org/wiki/Windows_Presentation_Foundation) и [UWP](https://en.wikipedia.org/wiki/Universal_Windows_Platform) приложениях для описания UI. Редактировать XAML-разметку в Visual Studio достаточно удобно благодаря таким фичам как: IntelliSense, автозакрытие тэгов, сворачивание кода. Но при реальной работе с этими фичами приходит понимание, что XAML в чистой студии достаточно обособлен:  плохо отслеживаются связи между кодом и разметкой. Это не позволиет чистой студии делать многие полезные вещи, которые умеет делать студия c CRR. Под катом подробности...
+
+картинка
+<habracut>
+
+
+
+# Навигация
+## Find References
+
+Одна из наиболее важных задач среды разработки -- поиск ссылок. В Visual Studio он есть, но CodeRush for Roslyn делает его полноценным: с этим расширением вы можете искать вхождения идентификатора не только в XAML, но и по коду во всем солюшне.
+
+[Видео](https://community.devexpress.com/blogs/rorybecker/Videos/XAMLFindReferences.mp4)
+[Документация](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument115799)
+
+
+## Tab to Next Reference
+
+У нас есть легкая версия поиска ссылок. Просто нажмите **Tab**. Если курсор находится на идентификатора, он мгновенно переместится к следующему его использованию и одновременно подсветятся все вхождения.  Чтобы перемещаться назад, можно использовать **Shift+Tab**.
+
+[Видео](https://community.devexpress.com/blogs/rorybecker/Videos/XAMLTabToNextReference.mp4)
+[Документация](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument115799)
+
+
+## Jump to Resource
+
+**F12** работает в XAML. Можно переходить на ResourceDictionary.Source или на Image.Source
+
+[Видео](https://community.devexpress.com/blogs/rorybecker/Videos/XAMLJumpToResource.mp4)
+[Документация](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument118586)
+
+## Jump to Symbol Declaation
+
+Помимо референсов, можно быстро перейти к месту объявления идентификатора, причем не важно где идентификатор объявлен, в коде или в разметке.
+
+[Видео](https://community.devexpress.com/blogs/rorybecker/Videos/XAMLJumpToSymbolDeclaration.mp4)
+[Документация](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument118586)
+
+# Форматирование разметки
+## Format XAML Document
+
+XAML полезно форматировать. Есть разные подходы к форматированию XAML: можно вручную, можно использовать онлайн-инструменты для форматирования XML, а можно воспользоваться фичей CRR.
+(https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument117323) прямо в Visual Studio. 
+
+![](https://community.devexpress.com/blogs/rorybecker/FormalXAMLDocument_thumb_0F59F62F.png)
+
+У нашего форматтера гибкая конфигурация и он крайне удобен в работе.
+
+![](https://community.devexpress.com/blogs/rorybecker/XAMLFormattingOptions_4C804265.png)
+
+## Break Apart/LineUp Attributes
+
+Часть возможностей форматтера доступна в виде отдельных фич, например одним кликом можно разбивать атрибуты по одному на строку, или сворачивать все в одну строку. 
+
+[Документация](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument116323).
+
+![](https://community.devexpress.com/blogs/rorybecker/XAMLBreakApartAttributes_25010241.png)
+
+# Рефакторинги
+
+## Import Type/All Types
+
+При копировании фрагмента кода в проект, CRR помогает правильно заполнить заголовок XAML файла [Import All Types](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument116322).
+
+## Optimize Namespace References
+
+У нас есть рефакторинг [Optimize Namespace References].  (https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument115640), он приводит в порядок референсы на пространства имен в XAML: сортирует их и убирает ненужные.
+Этот рефакторинг будет полезен тем, кто еще работает в Visual Studio 2015. В последней версии студии он есть из коробки.
+
+## Convert Nested Element to Attribute/Attribute to Nested Element
+
+[Этот](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument118380) рефакторинг позволяет вытащить аттрибут из тэга и сделать его вложенным элементом. Так же, у нас есть обратный рефакторинг - можно сделать вложенные элементы аттрибутами. 
+
+
+# Визуализация
+## Show Color
+
+Эта фича представляет собой декоратор, который визуализирует цвет, заданный шеснадцатиричным значением в XAML. 
+ [Show Color](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument115784/showcolor), 
+![](https://community.devexpress.com/blogs/rorybecker/XAMLShowColor_5C02928D.png)
+
+По клику на полосу открывается диалог в котором можно поменять цвет.
+
+![](https://community.devexpress.com/blogs/rorybecker/CodeRushColorPicker_thumb_77CBC9D8.png)
+
+## Region Painting
+В CRR по-своему реализованна отрисовка регионов. Наша версия удобнее тем, что имя региона видно всегда.
+![](https://community.devexpress.com/blogs/rorybecker/XAMLRegionPainting_5CBAACDD.png)
+
+[Документация](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument115784/regionpaint)
+
+# Помощь в написании разметки
+## Templates
+
+[Шаблоны CodeRush](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument115904) работают в XAML в полном объеме. Можно использовать встроенные шаблоны или писать свои с учётом ваших потребностей. 
+
+[Видео](https://community.devexpress.com/blogs/rorybecker/Videos/XAMLTemplates.mp4)
+
+## Selection Embedding
+
+Когда нужно положить определенный блок разметки внутрь какого-либо тэга. Приходит несколько раз перемещать курсор, потом форматировать. Чтобы упростить этот процессб у нас есть фича [Selection Embedding](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument115843/selembed), которая помещает выделение внутрь тэга одним кликом. Благодаря фичам [Selection Expand и Include Previous/Next Element](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument115843), можно даже не выделять необходимый блок мышкой/стрелочками, а просто нажимать горячие клавиши для управления выделением.
+
+## Paste Vector Drawing as XAML
+
+Копируем из иллюстратора
+
+![](https://community.devexpress.com/blogs/rorybecker/XAMLCopyFromBlend_680B732D.png)
+
+Переключаемся на Visual Studio и вставляем в XAML-файл. Рисунок вставится в векторном формате, его можно дальше масштабировать и менять как угодно.
+
+![](https://community.devexpress.com/blogs/rorybecker/XAMLPasteVectorIntoStudio_4ABDCD76.png)
+
+Также мы поддерживаем копирование векторов из Microsoft Visio, Microsoft PowerPoint.
+
+[Документация](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument118642/pastexaml)
+
+## Smart Duplicate Line
+
+Для ускорения написания однотипных конструкция с небольшими изменениями у нас есть [Smart Duplicate Line](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument115903/dupln) пытается определить изменяемые части в дублированной строке и помогает, например, инкрементирует числа и создает [филды](https://documentation.devexpress.com/#CodeRushForRoslyn/CustomDocument116553) на переменных частях.
+
+![](https://community.devexpress.com/blogs/rorybecker/XAMLSmartDuplicateLine_4FC52C87.png)
+
+Большинство примеров этой статьи было сделано на исходных текстах открытой библиотеки [Material Design in XAML Toolkit](https://github.com/ButchersBoy/MaterialDesignInXamlToolkit).

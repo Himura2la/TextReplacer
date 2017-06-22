@@ -4,14 +4,19 @@
 ->pre->post->
 #---------- Rules ------------
 
+
 # Sectioner
 #->pre-><group>
 #\n->\n<groupbody>\n\n</group>\n\n<group>
 #->post->\n<groupbody>\n\n</group>
 
-
 # Table Maker 2
-->pre-><list type="table">\n<listheader>\n<item>\n\t<term>Template</term>\n\t<term>Expansion</term>\n</item>\n</listheader>\n<item>\n\t<term>
-\n-></term>\n</item>\n<item>\n\t<term>
-|-></term>\n\t<term>
-->post-></term>\n</item>\n</list>
+# ->pre-><list type="table">\n<listheader><item>\n\t<term></term>\n</item></listheader>\n<item>\n\t<term>
+# \n-></term>\n</item>\n<item>\n\t<term>
+# |-></term>\n\t<term>
+# ->post-></term>\n</item>\n</list>
+
+[Видео](https://community.devexpress.com/blogs/rorybecker/Videos/XAMLJumpToSymbolDeclaration.mp4)-><video>https://youtu.be/8VRZSx7GbGs</video>
+[Видео](https://community.devexpress.com/blogs/rorybecker/Videos/XAMLJumpToResource.mp4)-><video>https://youtu.be/tbEW4caoTOU</video>
+[Видео](https://community.devexpress.com/blogs/rorybecker/Videos/XAMLTabToNextReference.mp4)-><video>https://youtu.be/CVf-nRxm_jU</video>
+[Видео](https://community.devexpress.com/blogs/rorybecker/Videos/XAMLFindReferences.mp4)-><video>https://youtu.be/bWcL1U8JJVg</video>
